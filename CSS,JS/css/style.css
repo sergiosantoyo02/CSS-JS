@@ -1,0 +1,40 @@
+h2
+{
+    color: purple;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #boxTR
+{
+    padding: 10px;
+    border: purple 2px solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.empty
+{
+    background-color: #01DF01;
+    color: white;
+}
+
+.empty::placeholder{
+    color: white;
+}
+
+.active:focus
+{
+    background-color: #FFFF00;
+    color: gray;
+}
+
+
+.full
+{
+    background-color: #FE2E2E;
+    color: white;
+}
+
+hr {
+    border: 1px dashed grey;
+    height: 0;
+    width: 100%;
+}

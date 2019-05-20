@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM 13</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>
+                Homework for Weekend
+            </h2>
+            <hr>
+        </header>
+        <section>
+            <div class="row">
+                <!--Cada div box1 - box8 es una practica (cada caja morada)-->
+                <div id="box1" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group"><!--form-group es una clase de bootstrap -->
+                        <p>Enter the Message</p>
+                        <p>
+                            <label for="txtMessage">Message: </label>
+                            <input type="text" id="txtMessage" placeholder="i'm potato" class="form-control">
+                            <!--La clase form-control es perteneciente de bootstrap -->
+                        </p>
+                        <p>
+                            <input type="button" id="btnMessage" value="Show Message" class="btn btn-primary">
+                            <!--La clase btn-primary es perteneciente de bootstrap -->
+                        </p>
+                    </div>
+                </div>
+                <div id="box2" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Sum of numbers</p>
+                        <p>
+                            <label for="txtNumber1">Number 1: </label>
+                            <input type="text" id="txtNumber1" placeholder="10" class="form-control">
+                        </p>
+                        <p>
+                            <label for="txtNumber2">Number 2: </label>
+                            <input type="text" id="txtNumber2" placeholder="20" class="form-control">
+                        </p>
+                        <p>
+                            <input type="button" id="btnSumar" value="Sumar" class="btn btn-primary">
+                        </p>
+                    </div>
+                </div>
+                <div id="box3" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Input Colors</p>
+                        <p>
+                            <label for="txtName">Name: </label>
+                            <input type="text" id="txtName" placeholder="Sergio" class="form-control empty">
+                        </p>
+                        <p>
+                            <label for="txtLastN1">Last Name:</label>
+                            <input type="text" id="txtLastN1" placeholder="Gomez" class="form-control empty">
+                        </p>
+                        <p>
+                            <label for="txtLastN2">Last Name:</label>
+                            <input type="text" id="txtLastN2" placeholder="Aceves" class="form-control empty">
+                        </p>
+                    </div>
+                </div>
+                <div id="box4" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Random Numbers</p>
+                        <p>
+                            <label for="txtAleatorios">Insert amount of random numbers:</label>
+                            <input type="text" id="txtAleatorios" placeholder="10" class="form-control">
+                        </p>
+                        <p>
+                            <a href="#tablas"><input type="button" value="Generate" id="btnRandom" class="btn btn-primary"></a>
+                            <input type="button" value="Clear Tables" id="btnClear" class="btn btn-primary">
+                        </p>
+                    </div>
+                </div>
+                <div id="box5" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Tablas de 1 hasta n</p>
+                        <p>
+                            <label for="txtNumTablas">Table: </label>
+                            <input type="text" id="txtNumTablas" placeholder="9" class="form-control">
+                        </p>
+                        <p>
+                            <label for="txtLimitMul">Range: </label>
+                            <input type="text" id="txtLimiMul" placeholder="10" class="form-control">
+                        </p>
+                        <p>
+                            <input type="button" value="Generate" id="btnTMul" class="btn btn-primary">
+                        </p>
+                    </div>
+                </div>
+                <div id="box6" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Numeros Primos & Factorial</p>
+                        <p>
+                            <label for="txtNumPF">Insert any Number: </label>
+                            <input type="text" id="txtNumPF" placeholder="10" class="form-control">
+                        </p>
+                        <p>
+                            <input type="button" value="Factorial" id="btnFact" class="btn btn-primary">
+                            <input type="button" value="Primos" id="btnPrim" class="btn btn-primary">
+                        </p>
+
+                    </div>
+                </div>
+                <div id="box7" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Ordering Methods</p>
+                        <p>
+                            <label for="txtSerieOrd">Insert the series of numbers</label>
+                            <input type="text" id="txtSerieOrd" placeholder="2,1,3,4,5" class="form-control">
+                        </p>
+                        <p>
+                            <input type="button" value="Ascendinge" id="btnAsc" class="btn btn-primary">
+                            <input type="button" value="Descending" id="btnDesc" class="btn btn-primary">
+                        </p>
+                    </div>
+                </div>
+                <div id="box8" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="form-group">
+                        <p>Search Methods</p>
+                        <p>
+                            <label for="txtSearchSerie">Insert the series of numbers</label>
+                            <input type="text" id="txtSearchSerie" placeholder="2,1,3,4,5" class="form-control">
+                        </p>
+                        <p>
+                            <label for="txtSearch">Insert the number to search</label>
+                            <input type="text" id="txtSearch" placeholder="10" class="form-control">
+                        </p>
+                        <p>
+                            <input type="button" value="Linear" id="btnLin" class="btn btn-primary">
+                            <input type="button" value="Binary" id="btnBin" class="btn btn-primary">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="tablas">
+
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
